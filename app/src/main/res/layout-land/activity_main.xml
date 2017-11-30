@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rosst.Last.MainActivity">
+
+    <LinearLayout
+        android:layout_width="576dp"
+        android:layout_height="295dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="a" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="179dp"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_weight="0.44" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="81dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="54dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_weight="0.53" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="b" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
