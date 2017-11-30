@@ -12,7 +12,6 @@ import java.io.Serializable;
 
 public class Container {
     private static Cursor cursor;
-    private String qwe;
     public Container() {
     }
 
