@@ -1,4 +1,4 @@
-package com.example.rosst.Last;
+package com.example.rosst.Seventh;
 
 
 import android.app.Activity;
@@ -13,13 +13,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 
 public class DetailFragment extends Fragment implements View.OnClickListener {
 
     public interface DataPass {
-        void onDataPass(Customer customer);
+        void onDataPass();
     }
 
     private DataPass dataPass;
@@ -92,11 +91,11 @@ public class DetailFragment extends Fragment implements View.OnClickListener {
                         contentValues.put("DEBT_PAYMENT", Integer.parseInt(editText10.getText().toString()));
                         sqLiteDatabase.insert("CUSTOMERS", null, contentValues);
                     }
-                    dataPass.onDataPass(customer);
+                    dataPass.onDataPass();
                 } else {
                     sqLiteDatabase.delete("CUSTOMERS", "_id = ?", new String[]{String.valueOf(customer.getId())});
 
-                    dataPass.onDataPass(null);
+                    dataPass.onDataPass();
                 }
             }
         });

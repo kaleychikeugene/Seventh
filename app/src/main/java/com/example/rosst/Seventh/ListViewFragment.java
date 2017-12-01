@@ -1,4 +1,4 @@
-package com.example.rosst.Last;
+package com.example.rosst.Seventh;
 
 
 import android.app.Activity;
@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class List_Fragment extends ListFragment {
+public class ListViewFragment extends ListFragment {
 
     interface ListListener {
         void itemClicked(long id);
@@ -26,7 +26,7 @@ public class List_Fragment extends ListFragment {
     private ListListener listListener;
     private List<Customer> customers= new ArrayList<>();
 
-    public List_Fragment() {
+    public ListViewFragment() {
     }
 
 
@@ -64,7 +64,7 @@ public class List_Fragment extends ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         if (listListener != null) {
-            listListener.itemClicked(position);
+            listListener.itemClicked(id);
         }
     }
 }

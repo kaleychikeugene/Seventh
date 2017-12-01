@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.rosst.Last">
+    package="com.example.rosst.Seventh">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <application
@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.rosst.Last.MainActivity">
+        <activity android:name="com.example.rosst.Seventh.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,11 +18,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.rosst.Last.Main4Activity"
-            android:parentActivityName="com.example.rosst.Last.MainActivity" />
+            android:name="com.example.rosst.Seventh.Main4Activity"
+            android:parentActivityName="com.example.rosst.Seventh.MainActivity" />
         <activity
-            android:name="com.example.rosst.Last.Main5Activity"
-            android:parentActivityName="com.example.rosst.Last.MainActivity" />
+            android:name="com.example.rosst.Seventh.Main5Activity"
+            android:parentActivityName="com.example.rosst.Seventh.MainActivity" />
         <meta-data android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyBfg-L72CZwKSx9a5moE-hZYcT-Y5cQpA8"/>
     </application>

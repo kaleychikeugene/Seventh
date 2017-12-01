@@ -1,10 +1,6 @@
-package com.example.rosst.Last;
+package com.example.rosst.Seventh;
 
 import android.database.Cursor;
-import android.os.Parcel;
-import android.os.Parcelable;
-
-import java.io.Serializable;
 
 /**
  * Created by rosst on 28.11.2017.

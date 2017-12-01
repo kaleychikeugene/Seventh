@@ -1,4 +1,4 @@
-package com.example.rosst.Last;
+package com.example.rosst.Seventh;
 
 
 import android.os.Bundle;
@@ -15,14 +15,12 @@ public class ButtonFragment extends Fragment {
 
 
     public ButtonFragment() {
-        // Required empty public constructor
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.button_fragment, container, false);
     }
 

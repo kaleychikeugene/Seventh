@@ -1,4 +1,4 @@
-package com.example.rosst.Last;
+package com.example.rosst.Seventh;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -10,8 +10,10 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 
 public class DataBase extends SQLiteOpenHelper {
+
     public DataBase(Context context) {
         super(context,"mydb",null,1);
+
     }
 
     @Override

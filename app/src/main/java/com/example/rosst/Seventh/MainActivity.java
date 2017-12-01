@@ -1,16 +1,14 @@
-package com.example.rosst.Last;
+package com.example.rosst.Seventh;
 
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -19,38 +17,31 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
-
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button button1;
     private Button button2;
     private Button button3;
+    private Button button4;
+    private Button button5;
+    private Button button6;
+    private Button button7;
     private AutoCompleteTextView autoCompleteTextView1;
     private AutoCompleteTextView autoCompleteTextView2;
+    private EditText editText1;
+    private EditText editText2;
+    private EditText editText3;
+    private EditText editText4;
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle actionBarDrawerToggle;
     private NavigationView navigationView;
 
     private DataBase database;
-    SQLiteDatabase sqLiteDatabase;
-    private EditText editText1;
-    private EditText editText2;
-    private EditText editText3;
-    private EditText editText4;
-    private Button button4;
-    private Button button5;
-    private Button button6;
-    private Button button7;
+    private SQLiteDatabase sqLiteDatabase;
 
-    Container container=new Container();
+    private Container container = new Container();
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -79,13 +70,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        try {
-            database = new DataBase(this);
-            sqLiteDatabase = database.getReadableDatabase();
-        } catch (SQLiteException e) {
-            Log.d("tag", e.getMessage());
-        }
-//        database.onCreate(sqLiteDatabase);
+        database = new DataBase(this);
+        sqLiteDatabase = database.getReadableDatabase();
 
         button1 = (Button) findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
@@ -140,16 +126,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
-                    case R.id.first: {
-                        Intent intent=new Intent(MainActivity.this,Main5Activity.class);
+                    case R.id.map: {
+                        Intent intent = new Intent(MainActivity.this, Main5Activity.class);
                         startActivity(intent);
                         return true;
                     }
-                    case R.id.list: {
-
-                        return true;
-                    }
-
                 }
                 return false;
             }

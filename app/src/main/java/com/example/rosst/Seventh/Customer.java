@@ -1,4 +1,4 @@
-package com.example.rosst.Last;
+package com.example.rosst.Seventh;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -144,19 +144,6 @@ public class Customer implements Parcelable{
 
     public int getCreditCardNumber() {
         return creditCardNumber;
-    }
-
-    public Customer(String fio, String address, int creditCardNumber, int bankAccountNumber, int credit, int payment, int timeCredit, int timePayment, int debtCredit, int debtPayment) {
-        this.fio = fio;
-        this.address = address;
-        this.creditCardNumber = creditCardNumber;
-        this.bankAccountNumber = bankAccountNumber;
-        this.credit = credit;
-        this.payment = payment;
-        this.timeCredit = timeCredit;
-        this.timePayment = timePayment;
-        this.debtCredit = debtCredit;
-        this.debtPayment = debtPayment;
     }
 
     @Override
