@@ -17,6 +17,7 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -57,7 +58,9 @@ public class MainActivity extends AppCompatActivity {
         } else {
             switch (item.getItemId()) {
                 case R.id.item1: {
-
+                    container.setCursor(null);
+                    Intent intent=new Intent(this,Main4Activity.class);
+                    startActivity(intent);
                     return true;
                 }
             }

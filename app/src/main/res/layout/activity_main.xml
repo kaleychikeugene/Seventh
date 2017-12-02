@@ -85,6 +85,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text="4000" />
+
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
@@ -94,6 +95,7 @@
             android:layout_row="4"
             android:gravity="center"
             android:text="c" />
+
         <EditText
             android:id="@+id/editText3"
             android:layout_width="176dp"
@@ -113,6 +115,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text="36" />
+
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
@@ -122,6 +125,7 @@
             android:layout_row="6"
             android:gravity="center"
             android:text="d" />
+
         <Button
             android:id="@+id/button6"
             android:layout_width="match_parent"
@@ -131,6 +135,7 @@
             android:layout_row="7"
             android:gravity="center"
             android:text="e" />
+
         <Button
             android:id="@+id/button7"
             android:layout_width="match_parent"
@@ -146,10 +151,9 @@
         android:id="@+id/nav_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:menu="@menu/nav_menu"
         android:layout_gravity="start"
-        ></android.support.design.widget.NavigationView>
-
+        app:menu="@menu/nav_menu">
+    </android.support.design.widget.NavigationView>
 
 
 </android.support.v4.widget.DrawerLayout>

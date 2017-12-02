@@ -24,11 +24,10 @@ public class ListViewFragment extends ListFragment {
     }
 
     private ListListener listListener;
-    private List<Customer> customers= new ArrayList<>();
+    private List<Customer> customers = new ArrayList<>();
 
     public ListViewFragment() {
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -42,14 +41,14 @@ public class ListViewFragment extends ListFragment {
                 customers.add(customer);
             }
         }
-        CursorAdapter cursorAdapter=null;
+        CursorAdapter cursorAdapter = null;
         try {
             cursorAdapter = new SimpleCursorAdapter(inflater.getContext(), R.layout.item,
-                    cursor, new String[]{"_id","FIO","ADDRESS","CREDIT_CARD_NUMBER","BANK_ACCOUNT_NUMBER",
-                    "CREDIT","PAYMENT","TIME_CREDIT","TIME_PAYMENT","DEBT_CREDIT","DEBT_PAYMENT"},
-                    new int[]{R.id.t1,R.id.t2,R.id.t3,R.id.t4,R.id.t5,R.id.t6,R.id.t7,R.id.t8,R.id.t9,R.id.t10,R.id.t11}, 0);
-        }catch (Exception e){
-            Log.d("tag",e.getMessage());
+                    cursor, new String[]{"_id", "FIO", "ADDRESS", "CREDIT_CARD_NUMBER", "BANK_ACCOUNT_NUMBER",
+                    "CREDIT", "PAYMENT", "TIME_CREDIT", "TIME_PAYMENT", "DEBT_CREDIT", "DEBT_PAYMENT"},
+                    new int[]{R.id.t1, R.id.t2, R.id.t3, R.id.t4, R.id.t5, R.id.t6, R.id.t7, R.id.t8, R.id.t9, R.id.t10, R.id.t11}, 0);
+        } catch (Exception e) {
+            Log.d("tag", e.getMessage());
         }
         setListAdapter(cursorAdapter);
         return super.onCreateView(inflater, container, savedInstanceState);
